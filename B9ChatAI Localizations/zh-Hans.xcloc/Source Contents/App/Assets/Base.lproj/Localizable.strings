@@ -1,0 +1,56 @@
+
+"menu.new" = "New";
+"menu.new.conversation" = "Conversation";
+"menu.new.tab" = "Window Tab";
+"menu.new.window" = "Window";
+"menu.help" = "Help";
+"menu.homePage" = "Project on GitHub";
+"menu.userManual" = "Online User Manual";
+
+"menu.archive" = "Archive";
+"menu.delete" = "Delete";
+"menu.setting" = "Application Settings";
+"menu.settingChat" = "Conversation Settings";
+"menu.guide" = "Guide";
+"menu.retry" = "Retry";
+
+"chat.defaultTitle" = "New Chat";
+"chat.archived" = "Archived";
+"chat.unArchive" = "Unarchive";
+"chat.deleted" = "Deleted";
+"chat.deleteRestore" = "Undelete";
+"chat.deleteNow" = "Delete Immediately";
+"chat.loading" = "...";
+"chat.loadingQueue" = "Waiting....";
+"chat.reply.wantContinue" = "Continue Selection?";
+"chat.reply.selectionContinue" = "Continue %@";
+"chat.reply.dropContextWarning" = "⚠️ You have selected a message in the middle of a context, continue send will drop all messages behind it.";
+
+"chat.setupBeforeUseNotice" = "You must set up the engine before you can chat.";
+"chat.setting.choiceEngine" = "Please choose a engine.";
+"chat.setting.choiceModel" = "Please choose a model.";
+"chat.setting.selectBadEngine" = "This engine is anomalous.";
+"chat.setting.engineMissingKey" = "This engine is missing the API key, please update it or choose another one.";
+"chat.setting.modelFetching" = "Fetching models...";
+"chat.setting.badSameID" = "The same ID already exists.";
+"chat.setting.temperatureTipLower" = "More focused and deterministic.";
+"chat.setting.temperatureTipStand" = "Balanced output.";
+"chat.setting.temperatureTipUpper" = "More interesting and creative.";
+"chat.setting.topPossibleTipLower" = "Sticks to the most likely words and phrases.";
+"chat.setting.topPossibleTipUpper" = "Allowed choose from a wider range of words and phrases.";
+
+"engine.create.step-verify" = "Verifying....";
+"engine.create.step-models" = "Checking models...";
+"engine.create.step-list-gpt" = "Available GPT models: %@";
+"engine.create.step-save-data" = "Save data.";
+"engine.create.step-done" = "[OK]";
+"engine.create.unrecognized-chat-warning" = "It seems that the chat content is not read properly, please check if there is a new version of B9ChatAI.";
+"engine.create.fail.hash-key" = "Unable to generate secure data for key.";
+"engine.create.fail.exist-key" = "Engine with the given key already exist.";
+
+"app.name" = "B9ChatAI";
+"app.privacy-sort" = "B9ChatAI does not collect any of your data, and all data is under your control.\n\nHowever, when using the application, third-party services may be called upon, which may collect your information. While you have control over which services are called upon, it is still important for you to be vigilant about protecting your information, carefully read and understand the privacy policies of related services, and be especially cautious when using proxy servers provided by third parties.";
+"app.homePage" = "https://github.com/b9software/B9ChatAI";
+"app.userManual" = "https://github.com/b9software/B9ChatAI/wiki";
+
+"guide.text1st" = "Dear user,\n\nThank you for downloading my app. Currently, an OpenAI account or API key is required to use the app. However, I will be adding support for more engines in the future.\n\nPlease note that this application is still in the early stages of development. In addition to the current features, many more are still in progress. I appreciate your patience and understanding as I work to improve the app.\n\nFor a list of known issues, please refer to the following link:\n https://github.com/b9software/B9ChatAI/issues/1\n\nThank you for your understanding and support.\n\nBest regards,\n\nBB9z\n\n2023-04-16";
