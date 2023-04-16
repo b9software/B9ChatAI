@@ -8,9 +8,12 @@ The latest version is available on the Mac App Store.
 
 [![Download on the Mac App Store](Assets/app_store_mac_download.svg)](https://apps.apple.com/us/app/b9chatai/id6446579557) In review ⚠️
 
-<details><summary>Screenshots</summary>
+<details><summary>Screenshots :eye:</summary>
 
-Todo
+![Slogan](https://user-images.githubusercontent.com/513082/232260447-e0fdcea4-5e03-45cd-8150-7ad94ec23660.png)
+![Continue Topic](https://user-images.githubusercontent.com/513082/232260450-d1453a82-280b-4e80-8dca-e984b4ce6e36.png)
+![macOS](https://user-images.githubusercontent.com/513082/232260456-ac37d7c8-655c-45b0-b2b2-fc06fba80c1f.png)
+![Settings](https://user-images.githubusercontent.com/513082/232260459-ec2fce83-afe4-4d37-8136-e535ad7703a4.png)
 
 </details>
 
