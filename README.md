@@ -47,8 +47,8 @@ The latest version is available on the Mac App Store.
 
   This app will be free for a limited time. Whenever there is a major update to the app, the price tier may be raised by one level. I will lower the price tier for one week before increasing it.
 
-## Beta Test Channel
+## Beta Testing Channel
 
-If you join, your Apple ID email will be shared with me. I cannot guarantee that this beta version will always be newer than the AppStore version.
+This channel is for testing new features. Please note that the beta version may not always be the latest compared to the App Store version.
 
 <https://testflight.apple.com/join/ATSq4vfs>
