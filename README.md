@@ -6,7 +6,7 @@
 
 The latest version is available on the Mac App Store.
 
-[![Download on the Mac App Store](Assets/app_store_mac_download.svg)](https://apps.apple.com/us/app/b9chatai/id6446579557) In review ⚠️
+[![Download on the Mac App Store](Assets/app_store_mac_download.svg)](https://apps.apple.com/us/app/b9chatai/id6446579557) In review v0.1 ⚠️
 
 <details><summary>Screenshots :eye:</summary>
 
@@ -52,3 +52,5 @@ The latest version is available on the Mac App Store.
 This channel is for testing new features. Please note that the beta version may not always be the latest compared to the App Store version.
 
 <https://testflight.apple.com/join/ATSq4vfs>
+
+[Talk on Slack](https://join.slack.com/t/bb9z/shared_invite/zt-1thxa7xsm-yHt4ifZd~qxj0Ko~grnP0Q)
