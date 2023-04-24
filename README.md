@@ -1,6 +1,6 @@
 # B9ChatAI
 
-![To be a better ChatGPT client for professionals](https://repository-images.githubusercontent.com/627631357/e681f9b2-532f-4c3e-a459-6079b07f2cc4)
+![To be a better ChatGPT client for professionals](https://repository-images.githubusercontent.com/627631357/49354469-fdc8-40b1-b663-52655644e2a2)
 
 <!-- https://github.com/b9software/B9ChatAI -->
 
@@ -10,10 +10,10 @@ The latest version is available on the Mac App Store.
 
 <details><summary>Screenshots :eye:</summary>
 
-![Slogan](https://user-images.githubusercontent.com/513082/232260447-e0fdcea4-5e03-45cd-8150-7ad94ec23660.png)
-![Continue Topic](https://user-images.githubusercontent.com/513082/232260450-d1453a82-280b-4e80-8dca-e984b4ce6e36.png)
+![Slogan](https://user-images.githubusercontent.com/513082/234133015-0873fcae-cc43-4527-a27a-b90e85ddd38a.png)
+![Continue Topic](https://user-images.githubusercontent.com/513082/234133028-0c241185-0afa-48de-a93b-d8bb9615a16e.png)
 ![macOS](https://user-images.githubusercontent.com/513082/232260456-ac37d7c8-655c-45b0-b2b2-fc06fba80c1f.png)
-![Settings](https://user-images.githubusercontent.com/513082/232260459-ec2fce83-afe4-4d37-8136-e535ad7703a4.png)
+![Settings](https://user-images.githubusercontent.com/513082/234133039-4ad3266b-d4d2-4b8c-958c-3492dc231145.png)
 
 </details>
 
