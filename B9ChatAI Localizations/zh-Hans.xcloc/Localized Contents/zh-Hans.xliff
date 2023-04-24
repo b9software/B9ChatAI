@@ -16,11 +16,6 @@
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="14.3" build-num="14E222b"/>
     </header>
     <body>
-      <trans-unit id="Cancel" xml:space="preserve">
-        <source>Cancel</source>
-        <target>取消</target>
-        <note>取消</note>
-      </trans-unit>
       <trans-unit id="app.homePage" xml:space="preserve">
         <source>https://github.com/b9software/B9ChatAI</source>
         <note/>
@@ -39,7 +34,13 @@ However, when using the application, third-party services may be called upon, wh
         <note/>
       </trans-unit>
       <trans-unit id="app.userManual" xml:space="preserve">
-        <source>https://github.com/b9software/B9ChatAI/wiki</source>
+        <source>https://github.com/b9software/B9ChatAI/wiki/</source>
+        <target>https://bb9z.feishu.cn/docx/WTmZdvBE7ovHUzxxSK5cQBIHnYd</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="cancel" xml:space="preserve">
+        <source>Cancel</source>
+        <target>取消</target>
         <note/>
       </trans-unit>
       <trans-unit id="chat.archived" xml:space="preserve">
@@ -104,6 +105,21 @@ However, when using the application, third-party services may be called upon, wh
       <trans-unit id="chat.setting.choiceModel" xml:space="preserve">
         <source>Please choose a model.</source>
         <target>请选择一个模型</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="chat.setting.clearAlertConfirm" xml:space="preserve">
+        <source>Clear</source>
+        <target>清空</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="chat.setting.clearAlertMessage" xml:space="preserve">
+        <source>This operation can't be undone.</source>
+        <target>操作无法撤销</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="chat.setting.clearAlertTitle" xml:space="preserve">
+        <source>Clear all messages in this conversation?</source>
+        <target>清空对话中的全部消息？</target>
         <note/>
       </trans-unit>
       <trans-unit id="chat.setting.engineMissingKey" xml:space="preserve">
@@ -196,6 +212,11 @@ However, when using the application, third-party services may be called upon, wh
         <target>似乎不能正确读取会话内容，请检查应用是否有新版本</target>
         <note/>
       </trans-unit>
+      <trans-unit id="guide.interCommunicationLink" xml:space="preserve">
+        <source>https://github.com/b9software/B9ChatAI/wiki/Inter-App-Communication</source>
+        <target>https://bb9z.feishu.cn/docx/WTmZdvBE7ovHUzxxSK5cQBIHnYd#SwWidyUSqoIMocxiUlncBspOnwd</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="guide.text1st" xml:space="preserve">
         <source>Dear user,
 
@@ -230,6 +251,11 @@ BB9z
       <trans-unit id="menu.archive" xml:space="preserve">
         <source>Archive</source>
         <target>归档</target>
+        <note>Sidebar Menu</note>
+      </trans-unit>
+      <trans-unit id="menu.continueLastTopic" xml:space="preserve">
+        <source>Continue Last Topic</source>
+        <target>从最下方消息继续</target>
         <note/>
       </trans-unit>
       <trans-unit id="menu.delete" xml:space="preserve">
@@ -237,10 +263,15 @@ BB9z
         <target>删除</target>
         <note/>
       </trans-unit>
+      <trans-unit id="menu.focusInput" xml:space="preserve">
+        <source>Focus on Input</source>
+        <target>切换到输入框</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="menu.guide" xml:space="preserve">
         <source>Guide</source>
         <target>指南</target>
-        <note/>
+        <note>Conversation Menu</note>
       </trans-unit>
       <trans-unit id="menu.help" xml:space="preserve">
         <source>Help</source>
@@ -252,10 +283,25 @@ BB9z
         <target>GitHub 项目页</target>
         <note/>
       </trans-unit>
+      <trans-unit id="menu.integrationBookmark" xml:space="preserve">
+        <source>Copy Browser Bookmark</source>
+        <target>拷贝浏览器书签</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="menu.integrationHelp" xml:space="preserve">
+        <source>What's this?</source>
+        <target>跨应用调起指南</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="menu.navigationBack" xml:space="preserve">
+        <source>Go Back</source>
+        <target>返回</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="menu.new" xml:space="preserve">
         <source>New</source>
         <target>新建</target>
-        <note/>
+        <note>In Application Main Menu</note>
       </trans-unit>
       <trans-unit id="menu.new.conversation" xml:space="preserve">
         <source>Conversation</source>
@@ -272,12 +318,27 @@ BB9z
         <target>窗口</target>
         <note/>
       </trans-unit>
+      <trans-unit id="menu.operation" xml:space="preserve">
+        <source>Operation</source>
+        <target>操作</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="menu.retry" xml:space="preserve">
         <source>Retry</source>
         <target>重试</target>
         <note/>
       </trans-unit>
+      <trans-unit id="menu.send" xml:space="preserve">
+        <source>Send Input</source>
+        <target>发送输入</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="menu.setting" xml:space="preserve">
+        <source>Settings</source>
+        <target>设置</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="menu.settingApp" xml:space="preserve">
         <source>Application Settings</source>
         <target>应用设置</target>
         <note/>
@@ -299,6 +360,16 @@ BB9z
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="14.3" build-num="14E222b"/>
     </header>
     <body>
+      <trans-unit id="BZf-4c-xax.disabledTitle" xml:space="preserve">
+        <source> Copied</source>
+        <target>已复制</target>
+        <note>Class = "UIButton"; disabledTitle = " Copied"; ObjectID = "BZf-4c-xax";</note>
+      </trans-unit>
+      <trans-unit id="Lcn-r6-16u.title" xml:space="preserve">
+        <source>Integration</source>
+        <target>应用调用</target>
+        <note>Class = "UIBarButtonItem"; title = "Integration"; ObjectID = "Lcn-r6-16u";</note>
+      </trans-unit>
       <trans-unit id="chat-acrhived-list-cell-name.text" xml:space="preserve">
         <source>Label</source>
         <note>Class = "UILabel"; text = "Label"; ObjectID = "chat-acrhived-list-cell-name"; Note = "&lt;Pass&gt;";</note>
@@ -350,6 +421,15 @@ BB9z
         <source>STATE</source>
         <note>Class = "UILabel"; text = "STATE"; ObjectID = "chat-input-action-state";</note>
       </trans-unit>
+      <trans-unit id="chat-input-continue-action.normalTitle" xml:space="preserve">
+        <source>Tell me more</source>
+        <target>接着输出</target>
+        <note>Class = "UIButton"; normalTitle = "Tell me more"; ObjectID = "chat-input-continue-action";</note>
+      </trans-unit>
+      <trans-unit id="chat-input-continue-action.selectedTitle" xml:space="preserve">
+        <source>Reply</source>
+        <note>Class = "UIButton"; selectedTitle = "Reply"; ObjectID = "chat-input-continue-action";</note>
+      </trans-unit>
       <trans-unit id="chat-input-reply-action.normalTitle" xml:space="preserve">
         <source>Continue Selection?</source>
         <target>继续选中话题？</target>
@@ -376,6 +456,15 @@ BB9z
       <trans-unit id="chat-setting-cancel-button.normalTitle" xml:space="preserve">
         <source>Button</source>
         <note>Class = "UIButton"; normalTitle = "Button"; ObjectID = "chat-setting-cancel-button";</note>
+      </trans-unit>
+      <trans-unit id="chat-setting-clear-message.configuration.title" xml:space="preserve">
+        <source>Clear Conversation</source>
+        <target>清空对话</target>
+        <note>Class = "UIButton"; configuration.title = "Clear Conversation"; ObjectID = "chat-setting-clear-message";</note>
+      </trans-unit>
+      <trans-unit id="chat-setting-clear-message.normalTitle" xml:space="preserve">
+        <source>Button</source>
+        <note>Class = "UIButton"; normalTitle = "Button"; ObjectID = "chat-setting-clear-message";</note>
       </trans-unit>
       <trans-unit id="chat-setting-engine-empty.text" xml:space="preserve">
         <source>No engine. You need create one first.</source>
@@ -448,6 +537,10 @@ BB9z
         <target>显示在列表和窗口上</target>
         <note>Class = "UILabel"; text = "The title display in list and window"; ObjectID = "chat-setting-name-tip";</note>
       </trans-unit>
+      <trans-unit id="chat-setting-other-header.text" xml:space="preserve">
+        <source>Others</source>
+        <note>Class = "UILabel"; text = "Others"; ObjectID = "chat-setting-other-header";</note>
+      </trans-unit>
       <trans-unit id="chat-setting-parameters.text" xml:space="preserve">
         <source>Parameters</source>
         <target>参数</target>
@@ -461,6 +554,33 @@ BB9z
       <trans-unit id="chat-setting-save-button.normalTitle" xml:space="preserve">
         <source>Button</source>
         <note>Class = "UIButton"; normalTitle = "Button"; ObjectID = "chat-setting-save-button";</note>
+      </trans-unit>
+      <trans-unit id="chat-setting-send-by.text" xml:space="preserve">
+        <source>Send By</source>
+        <target>发送键</target>
+        <note>Class = "UILabel"; text = "Send By"; ObjectID = "chat-setting-send-by";</note>
+      </trans-unit>
+      <trans-unit id="chat-setting-send-segment.segmentTitles[0]" xml:space="preserve">
+        <source>Default</source>
+        <target>默认</target>
+        <note>Class = "UISegmentedControl"; chat-setting-send-segment.segmentTitles[0] = "Default"; ObjectID = "chat-setting-send-segment";</note>
+      </trans-unit>
+      <trans-unit id="chat-setting-send-segment.segmentTitles[1]" xml:space="preserve">
+        <source>⌘⏎</source>
+        <note>Class = "UISegmentedControl"; chat-setting-send-segment.segmentTitles[1] = "⌘⏎"; ObjectID = "chat-setting-send-segment";</note>
+      </trans-unit>
+      <trans-unit id="chat-setting-send-segment.segmentTitles[2]" xml:space="preserve">
+        <source>⇧⏎</source>
+        <note>Class = "UISegmentedControl"; chat-setting-send-segment.segmentTitles[2] = "⇧⏎"; ObjectID = "chat-setting-send-segment";</note>
+      </trans-unit>
+      <trans-unit id="chat-setting-send-segment.segmentTitles[3]" xml:space="preserve">
+        <source>⏎</source>
+        <note>Class = "UISegmentedControl"; chat-setting-send-segment.segmentTitles[3] = "⏎"; ObjectID = "chat-setting-send-segment";</note>
+      </trans-unit>
+      <trans-unit id="chat-setting-send-tip.text" xml:space="preserve">
+        <source>Send input with which key</source>
+        <target>通过哪个按键发送输入</target>
+        <note>Class = "UILabel"; text = "Send input with which key"; ObjectID = "chat-setting-send-tip";</note>
       </trans-unit>
       <trans-unit id="chat-setting-state-label.text" xml:space="preserve">
         <source>STATE</source>
@@ -530,14 +650,6 @@ BB9z
         <source>取消</source>
         <note>Class = "UIButton"; normalTitle = "取消"; ObjectID = "Gl7-Zi-fNA";</note>
       </trans-unit>
-      <trans-unit id="JBc-M5-e4W.configuration.title" xml:space="preserve">
-        <source>+</source>
-        <note>Class = "UIButton"; configuration.title = "+"; ObjectID = "JBc-M5-e4W";</note>
-      </trans-unit>
-      <trans-unit id="JBc-M5-e4W.normalTitle" xml:space="preserve">
-        <source>Button</source>
-        <note>Class = "UIButton"; normalTitle = "Button"; ObjectID = "JBc-M5-e4W";</note>
-      </trans-unit>
       <trans-unit id="JWd-zy-7Jh.title" xml:space="preserve">
         <source>Playground</source>
         <note>Class = "UINavigationItem"; title = "Playground"; ObjectID = "JWd-zy-7Jh";</note>
@@ -551,21 +663,17 @@ BB9z
         <target>已归档</target>
         <note>Class = "UIButton"; configuration.title = "Archived"; ObjectID = "Wdx-eU-NKe";</note>
       </trans-unit>
-      <trans-unit id="ha1-7H-yba.configuration.title" xml:space="preserve">
-        <source>-</source>
-        <note>Class = "UIButton"; configuration.title = "-"; ObjectID = "ha1-7H-yba";</note>
-      </trans-unit>
-      <trans-unit id="ha1-7H-yba.normalTitle" xml:space="preserve">
-        <source>Button</source>
-        <note>Class = "UIButton"; normalTitle = "Button"; ObjectID = "ha1-7H-yba";</note>
-      </trans-unit>
-      <trans-unit id="iu3-lC-qcz.text" xml:space="preserve">
-        <source>Label</source>
-        <note>Class = "UILabel"; text = "Label"; ObjectID = "iu3-lC-qcz";</note>
-      </trans-unit>
       <trans-unit id="opx-K9-Dwv.text" xml:space="preserve">
         <source>标题</source>
         <note>Class = "UILabel"; text = "标题"; ObjectID = "opx-K9-Dwv";</note>
+      </trans-unit>
+      <trans-unit id="prE-jm-9k0.segmentTitles[0]" xml:space="preserve">
+        <source>System</source>
+        <note>Class = "UISegmentedControl"; prE-jm-9k0.segmentTitles[0] = "System"; ObjectID = "prE-jm-9k0";</note>
+      </trans-unit>
+      <trans-unit id="prE-jm-9k0.segmentTitles[1]" xml:space="preserve">
+        <source>Second</source>
+        <note>Class = "UISegmentedControl"; prE-jm-9k0.segmentTitles[1] = "Second"; ObjectID = "prE-jm-9k0";</note>
       </trans-unit>
       <trans-unit id="sidebar-deleted-button.configuration.title" xml:space="preserve">
         <source>Deleted</source>
@@ -638,6 +746,10 @@ BB9z
         <source>About</source>
         <target>关于</target>
         <note>Class = "UIViewController"; title = "About"; ObjectID = "about-vc";</note>
+      </trans-unit>
+      <trans-unit id="about-version.text" xml:space="preserve">
+        <source>VERSION</source>
+        <note>Class = "UILabel"; text = "VERSION"; ObjectID = "about-version";</note>
       </trans-unit>
       <trans-unit id="engine-create-cancel.configuration.title" xml:space="preserve">
         <source>Cancel</source>
@@ -763,6 +875,11 @@ BB9z
         <target>AI 引擎</target>
         <note>Class = "UILabel"; text = "Engines"; ObjectID = "setting-engine-section";</note>
       </trans-unit>
+      <trans-unit id="setting-font-size-title.text" xml:space="preserve">
+        <source>Font Size</source>
+        <target>文字大小</target>
+        <note>Class = "UILabel"; text = "Font Size"; ObjectID = "setting-font-size-title";</note>
+      </trans-unit>
       <trans-unit id="setting-key-tip-auto-copy.text" xml:space="preserve">
         <source>You can select cell content by double-clicking</source>
         <target>双击会话中的文字可以直接选中</target>
@@ -775,17 +892,31 @@ Try it now by pressing the Tab (+shift) key and arrow keys.</source>
 现在试试按 Tab (或+shift) 和方向键</target>
         <note>Class = "UILabel"; text = "Tips: You can navigate through UI elements using your keyboard.\nTry it now by pressing the Tab (+shift) key and arrow keys."; ObjectID = "setting-key-tip-navigation";</note>
       </trans-unit>
-      <trans-unit id="setting-key-tip-send.text" xml:space="preserve">
-        <source>Tips: You can send text by pressing Command+Enter in the input box.
-I will add more key binding settings in future releases.</source>
-        <target>提示：会话输入框按 Command+Enter 可以发送文字
-未来版本会加更多按键设置</target>
-        <note>Class = "UILabel"; text = "Tips: You can send text by pressing Command+Enter in the input box.\nI will add more key binding settings in future releases."; ObjectID = "setting-key-tip-send";</note>
-      </trans-unit>
       <trans-unit id="setting-keys-section.text" xml:space="preserve">
         <source>Key Bindings</source>
         <target>按键配置</target>
         <note>Class = "UILabel"; text = "Key Bindings"; ObjectID = "setting-keys-section";</note>
+      </trans-unit>
+      <trans-unit id="setting-send-by-key.text" xml:space="preserve">
+        <source>KEY</source>
+        <note>Class = "UILabel"; text = "KEY"; ObjectID = "setting-send-by-key";</note>
+      </trans-unit>
+      <trans-unit id="setting-send-by-segment.segmentTitles[0]" xml:space="preserve">
+        <source>⌘⏎</source>
+        <note>Class = "UISegmentedControl"; setting-send-by-segment.segmentTitles[0] = "⌘⏎"; ObjectID = "setting-send-by-segment";</note>
+      </trans-unit>
+      <trans-unit id="setting-send-by-segment.segmentTitles[1]" xml:space="preserve">
+        <source>⇧⏎</source>
+        <note>Class = "UISegmentedControl"; setting-send-by-segment.segmentTitles[1] = "⇧⏎"; ObjectID = "setting-send-by-segment";</note>
+      </trans-unit>
+      <trans-unit id="setting-send-by-segment.segmentTitles[2]" xml:space="preserve">
+        <source>⏎</source>
+        <note>Class = "UISegmentedControl"; setting-send-by-segment.segmentTitles[2] = "⏎"; ObjectID = "setting-send-by-segment";</note>
+      </trans-unit>
+      <trans-unit id="setting-send-by-title.text" xml:space="preserve">
+        <source>Send By</source>
+        <target>发送键</target>
+        <note>Class = "UILabel"; text = "Send By"; ObjectID = "setting-send-by-title";</note>
       </trans-unit>
       <trans-unit id="setting-theme-dark.title" xml:space="preserve">
         <source>Dark</source>
@@ -802,13 +933,6 @@ I will add more key binding settings in future releases.</source>
         <target>跟随系统</target>
         <note>Class = "UICommand"; title = "System"; ObjectID = "setting-theme-system";</note>
       </trans-unit>
-      <trans-unit id="setting-theme-tip.text" xml:space="preserve">
-        <source>Since I always use dark mode, I am unsure about which colors would be suitable for the light mode.
-I welcome any discussion on this topic on GitHub.</source>
-        <target>因为我只用深色 UI，浅色模式不确定用什么颜色
-欢迎到 GitHub 上讨论下这个</target>
-        <note>Class = "UILabel"; text = "Since I always use dark mode, I am unsure about which colors would be suitable for the light mode.\nI welcome any discussion on this topic on GitHub."; ObjectID = "setting-theme-tip";</note>
-      </trans-unit>
       <trans-unit id="setting-theme-title.text" xml:space="preserve">
         <source>Theme</source>
         <target>主题</target>
@@ -818,6 +942,104 @@ I welcome any discussion on this topic on GitHub.</source>
         <source>Setting</source>
         <target>设置</target>
         <note>Class = "UIViewController"; title = "Setting"; ObjectID = "setting-vc";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="SchemePlayground/Base.lproj/Localizable.strings" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="14.3" build-num="14E222b"/>
+    </header>
+    <body>
+      <trans-unit id="guide.interCommunicationLink" xml:space="preserve">
+        <source>https://github.com/b9software/B9ChatAI/wiki/Inter-App-Communication</source>
+        <target>https://bb9z.feishu.cn/docx/WTmZdvBE7ovHUzxxSK5cQBIHnYd#SwWidyUSqoIMocxiUlncBspOnwd</target>
+        <note>Localizable.strings
+  B9ChatAI
+
+  Copyright © 2023 B9Software. All rights reserved.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="SchemePlayground/Base.lproj/Scheme.storyboard" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="14.3" build-num="14E222b"/>
+    </header>
+    <body>
+      <trans-unit id="0N8-aw-dmw.text" xml:space="preserve">
+        <source>Conversation ID</source>
+        <target>Conversation ID</target>
+        <note>Class = "UILabel"; text = "Conversation ID"; ObjectID = "0N8-aw-dmw";</note>
+      </trans-unit>
+      <trans-unit id="9Lh-Uy-Zak.text" xml:space="preserve">
+        <source>Command</source>
+        <target>Command</target>
+        <note>Class = "UILabel"; text = "Command"; ObjectID = "9Lh-Uy-Zak";</note>
+      </trans-unit>
+      <trans-unit id="87t-lF-XrF.configuration.title" xml:space="preserve">
+        <source>Call</source>
+        <target>Call</target>
+        <note>Class = "UIButton"; configuration.title = "Call"; ObjectID = "87t-lF-XrF";</note>
+      </trans-unit>
+      <trans-unit id="87t-lF-XrF.normalTitle" xml:space="preserve">
+        <source>Button</source>
+        <target>Button</target>
+        <note>Class = "UIButton"; normalTitle = "Button"; ObjectID = "87t-lF-XrF";</note>
+      </trans-unit>
+      <trans-unit id="MER-dK-OM9.configuration.title" xml:space="preserve">
+        <source>Copy</source>
+        <target>Copy</target>
+        <note>Class = "UIButton"; configuration.title = "Copy"; ObjectID = "MER-dK-OM9";</note>
+      </trans-unit>
+      <trans-unit id="MER-dK-OM9.normalTitle" xml:space="preserve">
+        <source>Button</source>
+        <target>Button</target>
+        <note>Class = "UIButton"; normalTitle = "Button"; ObjectID = "MER-dK-OM9";</note>
+      </trans-unit>
+      <trans-unit id="X3d-Ea-syD.text" xml:space="preserve">
+        <source>Send content</source>
+        <target>Send content</target>
+        <note>Class = "UILabel"; text = "Send content"; ObjectID = "X3d-Ea-syD";</note>
+      </trans-unit>
+      <trans-unit id="ZBn-3i-q4E.configuration.title" xml:space="preserve">
+        <source>Copy</source>
+        <target>Copy</target>
+        <note>Class = "UIButton"; configuration.title = "Copy"; ObjectID = "ZBn-3i-q4E";</note>
+      </trans-unit>
+      <trans-unit id="ZBn-3i-q4E.normalTitle" xml:space="preserve">
+        <source>Button</source>
+        <target>Button</target>
+        <note>Class = "UIButton"; normalTitle = "Button"; ObjectID = "ZBn-3i-q4E";</note>
+      </trans-unit>
+      <trans-unit id="rI4-94-0aG.text" xml:space="preserve">
+        <source>Query feedback todo</source>
+        <target>Query feedback todo</target>
+        <note>Class = "UILabel"; text = "Query feedback todo"; ObjectID = "rI4-94-0aG";</note>
+      </trans-unit>
+      <trans-unit id="sLc-KY-6Z3.segmentTitles[0]" xml:space="preserve">
+        <source>send</source>
+        <target>send</target>
+        <note>Class = "UISegmentedControl"; sLc-KY-6Z3.segmentTitles[0] = "send"; ObjectID = "sLc-KY-6Z3";</note>
+      </trans-unit>
+      <trans-unit id="sLc-KY-6Z3.segmentTitles[1]" xml:space="preserve">
+        <source>query</source>
+        <target>query</target>
+        <note>Class = "UISegmentedControl"; sLc-KY-6Z3.segmentTitles[1] = "query"; ObjectID = "sLc-KY-6Z3";</note>
+      </trans-unit>
+      <trans-unit id="vx0-G0-VgY.text" xml:space="preserve">
+        <source>JS Bookmark</source>
+        <target>JS Bookmark</target>
+        <note>Class = "UILabel"; text = "JS Bookmark"; ObjectID = "vx0-G0-VgY";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="SchemePlayground/en.lproj/InfoPlist.strings" datatype="plaintext" source-language="en" target-language="zh-Hans">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="14.3" build-num="14E222b"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>SchemePlayground</source>
+        <note>Bundle name</note>
       </trans-unit>
     </body>
   </file>

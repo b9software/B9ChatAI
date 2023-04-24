@@ -1,0 +1,8 @@
+/* 
+  Localizable.strings
+  B9ChatAI
+
+  Copyright © 2023 B9Software. All rights reserved.
+*/
+
+"guide.interCommunicationLink" = "https://github.com/b9software/B9ChatAI/wiki/Inter-App-Communication";
