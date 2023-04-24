@@ -19,6 +19,8 @@ The latest version is available on the Mac App Store.
 
 ## Where to go
 
+* View [User Manual](https://github.com/b9software/B9ChatAI/wiki)
+
 * For Feature Requests
 
   Goto [discussions](https://github.com/b9software/B9ChatAI/discussions/categories/feature-requests), search and upvote before opening a new one.
