@@ -6,7 +6,7 @@
 
 The latest version is available on the Mac App Store.
 
-[![Download on the Mac App Store](Assets/app_store_mac_download.svg)](https://apps.apple.com/us/app/b9chatai/id6446579557) In review v0.1 ⚠️
+[![Download on the Mac App Store](Assets/app_store_mac_download.svg)](https://apps.apple.com/us/app/b9chatai/id6446579557) In review ⚠️ v0.3 at 2023-04-27 08:34+0800
 
 <details><summary>Screenshots :eye:</summary>
 
