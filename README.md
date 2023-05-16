@@ -1,12 +1,18 @@
 # B9ChatAI
 
-![To be a better ChatGPT client for professionals](https://repository-images.githubusercontent.com/627631357/49354469-fdc8-40b1-b663-52655644e2a2)
-
 <!-- https://github.com/b9software/B9ChatAI -->
 
+![To be a better ChatGPT client for professionals](https://repository-images.githubusercontent.com/627631357/49354469-fdc8-40b1-b663-52655644e2a2)
+
+中文用户请移步至 [docs.qq.com/doc/DUVVvdVhyaEdZYUxT](https://docs.qq.com/doc/DUVVvdVhyaEdZYUxT)
+
+<!--
 The latest version is available on the Mac App Store.
 
-[![Download on the Mac App Store](Assets/app_store_mac_download.svg)](https://apps.apple.com/us/app/b9chatai/id6446579557) In review ⚠️ v0.3 at 2023-04-27 08:34+0800
+[![Download on the Mac App Store](Assets/app_store_mac_download.svg)](https://apps.apple.com/us/app/b9chatai/id6446579557)
+-->
+
+⚠️ v0.3 Still waiting for review since 2023-04-27 08:34+0800.
 
 <details><summary>Screenshots :eye:</summary>
 
@@ -27,7 +33,9 @@ The latest version is available on the Mac App Store.
 
 * For Bug Report
 
-  Open an [issue](https://github.com/b9software/B9ChatAI/issues). Checkout [known issues](https://github.com/b9software/B9ChatAI/issues/1) before opening a new one.
+  I can only develop this app in my spare time, so I haven't been able to do extensive testing. Please inform me if you come across any issues.
+
+  You can do so by opening an [issue](https://github.com/b9software/B9ChatAI/issues). Please take a look at [known issues](https://github.com/b9software/B9ChatAI/issues/1) before opening a new one.
 
 * Want to Help?
 
@@ -35,7 +43,7 @@ The latest version is available on the Mac App Store.
 
   1. Improving and expanding existing documents.
   2. Enhancing existing translations or translating the application into other languages.
-  3. I would like to add support for more engines, such as Claude and Azure OpenAI. If you can provide a testing API Key, that would be very helpful. Contact me via Twitter direct message [@BB9z](https://twitter.com/BB9z).
+  3. I would like to add support for more engines, such as Claude and Azure OpenAI. If you can provide a testing API Key, that would be very helpful. Contact me via Twitter direct message [@BB9z](https://twitter.com/BB9z) or [Slack](https://join.slack.com/t/bb9z/shared_invite/zt-1thxa7xsm-yHt4ifZd~qxj0Ko~grnP0Q).
 
 ## Long Term Planning
 
