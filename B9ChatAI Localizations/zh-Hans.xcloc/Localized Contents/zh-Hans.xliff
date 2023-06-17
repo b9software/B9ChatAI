@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="App/Assets/Base.lproj/InfoPlist.strings" datatype="plaintext" source-language="en" target-language="zh-Hans">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="14.3" build-num="14E222b"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="14.3.1" build-num="14E300c"/>
     </header>
     <body>
       <trans-unit id="CFBundleName" xml:space="preserve">
@@ -13,11 +13,22 @@
   </file>
   <file original="App/Assets/Base.lproj/Localizable.strings" source-language="en" target-language="zh-Hans" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="14.3" build-num="14E222b"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="14.3.1" build-num="14E300c"/>
     </header>
     <body>
-      <trans-unit id="app.homePage" xml:space="preserve">
-        <source>https://github.com/b9software/B9ChatAI</source>
+      <trans-unit id="Proccess text with ${applicationName}" xml:space="preserve">
+        <source>Proccess text with ${applicationName}</source>
+        <target>用 ${applicationName} 处理文本</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Send ${text} to ${conversation}" xml:space="preserve">
+        <source>Send ${text} to ${conversation}</source>
+        <target>发送 ${text} 到 ${conversation}</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Send text to ${applicationName}" xml:space="preserve">
+        <source>Send text to ${applicationName}</source>
+        <target>发送文本到 ${applicationName}</target>
         <note/>
       </trans-unit>
       <trans-unit id="app.name" xml:space="preserve">
@@ -31,11 +42,6 @@ However, when using the application, third-party services may be called upon, wh
         <target>B9ChatAI 不会收集您的任何信息，所有数据都在您的掌控下。
 
 但在应用使用时，会调用第三方服务，这些服务可能会收集您的信息。虽然调用哪些服务由您掌控，但仍请您注意信息保护，仔细阅读并理解相关服务的隐私政策，尤其要小心第三方提供的代理服务器。</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="app.userManual" xml:space="preserve">
-        <source>https://github.com/b9software/B9ChatAI/wiki/</source>
-        <target>https://bb9z.feishu.cn/docx/WTmZdvBE7ovHUzxxSK5cQBIHnYd</target>
         <note/>
       </trans-unit>
       <trans-unit id="cancel" xml:space="preserve">
@@ -92,6 +98,16 @@ However, when using the application, third-party services may be called upon, wh
         <target>继续选中话题？</target>
         <note/>
       </trans-unit>
+      <trans-unit id="chat.send.engineNoLoad" xml:space="preserve">
+        <source>Unable load conversation engine.</source>
+        <target>引擎加载失败</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="chat.send.engineNotSet" xml:space="preserve">
+        <source>Conversation engine has not been set.</source>
+        <target>会话的引擎未设置</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="chat.setting.badSameID" xml:space="preserve">
         <source>The same ID already exists.</source>
         <target>已存在相同的 ID</target>
@@ -119,7 +135,7 @@ However, when using the application, third-party services may be called upon, wh
       </trans-unit>
       <trans-unit id="chat.setting.clearAlertTitle" xml:space="preserve">
         <source>Clear all messages in this conversation?</source>
-        <target>清空对话中的全部消息？</target>
+        <target>清空会话中的全部消息？</target>
         <note/>
       </trans-unit>
       <trans-unit id="chat.setting.engineMissingKey" xml:space="preserve">
@@ -174,12 +190,27 @@ However, when using the application, third-party services may be called upon, wh
       </trans-unit>
       <trans-unit id="engine.create.fail.exist-key" xml:space="preserve">
         <source>Engine with the given key already exist.</source>
-        <target>这个 API Key 已经添加过了</target>
+        <target>这个 API 密钥已经添加过了</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="engine.create.fail.exist-proxy" xml:space="preserve">
+        <source>Engine with the same proxy config already exist.</source>
+        <target>相同配置的代理引擎已存在</target>
         <note/>
       </trans-unit>
       <trans-unit id="engine.create.fail.hash-key" xml:space="preserve">
         <source>Unable to generate secure data for key.</source>
         <target>无法生成密钥数据</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="engine.create.no-key-given" xml:space="preserve">
+        <source>Please input a valid API key.</source>
+        <target>请输入有效的 API 密钥</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="engine.create.no-proxy-address-given" xml:space="preserve">
+        <source>Please input a valid proxy address.</source>
+        <target>请输入有效的代理服务器地址</target>
         <note/>
       </trans-unit>
       <trans-unit id="engine.create.step-done" xml:space="preserve">
@@ -207,51 +238,94 @@ However, when using the application, third-party services may be called upon, wh
         <target>检查中....</target>
         <note/>
       </trans-unit>
+      <trans-unit id="engine.create.type-openai-proxy.detail" xml:space="preserve">
+        <source>Use a proxy server foward requests to OpenAI API</source>
+        <target>使用代理服务中转 OpenAI 请求</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="engine.create.type-openai-proxy.title" xml:space="preserve">
+        <source>ChatGPT / API Proxy</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="engine.create.type-openai.detail" xml:space="preserve">
+        <source>Use offical OpenAI API</source>
+        <target>使用 OpenAI 官方接口</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="engine.create.type-openai.title" xml:space="preserve">
+        <source>ChatGPT / OpenAI</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="engine.create.unrecognized-chat-warning" xml:space="preserve">
         <source>It seems that the chat content is not read properly, please check if there is a new version of B9ChatAI.</source>
         <target>似乎不能正确读取会话内容，请检查应用是否有新版本</target>
         <note/>
       </trans-unit>
-      <trans-unit id="guide.interCommunicationLink" xml:space="preserve">
-        <source>https://github.com/b9software/B9ChatAI/wiki/Inter-App-Communication</source>
-        <target>https://bb9z.feishu.cn/docx/WTmZdvBE7ovHUzxxSK5cQBIHnYd#SwWidyUSqoIMocxiUlncBspOnwd</target>
+      <trans-unit id="genral-error.invalid-url" xml:space="preserve">
+        <source>"%@" is not a valid URL.</source>
+        <target>"%@" 不是合法的 URL</target>
         <note/>
       </trans-unit>
-      <trans-unit id="guide.text1st" xml:space="preserve">
-        <source>Dear user,
-
-Thank you for downloading my app. Currently, an OpenAI account or API key is required to use the app. However, I will be adding support for more engines in the future.
-
-Please note that this application is still in the early stages of development. In addition to the current features, many more are still in progress. I appreciate your patience and understanding as I work to improve the app.
-
-For a list of known issues, please refer to the following link:
- https://github.com/b9software/B9ChatAI/issues/1
-
-Thank you for your understanding and support.
-
-Best regards,
-
-BB9z
-
-2023-04-16</source>
-        <target>你好，
-
-感谢你下载我的应用。暂时你需要 OpenAI 账户或者有 API key 才能使用这个应用。未来会支持更多的引擎。
-
-请注意这个应用仍在开发早期阶段，还有非常多的功能待开发，目前已知的问题可查看链接：
-https://github.com/b9software/B9ChatAI/issues/1
-
-感谢你的支持与理解。
-
-BB9z
-
-2023-04-16</target>
+      <trans-unit id="guide.gptBestPractices" xml:space="preserve">
+        <source>GPT best practices</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="guide.gptBestPracticesLink" xml:space="preserve">
+        <source>https://platform.openai.com/docs/guides/gpt-best-practices</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="guide.interCommunicationLink" xml:space="preserve">
+        <source>https://github.com/b9software/B9ChatAI/wiki/Inter-App-Communication</source>
+        <target>https://docs.qq.com/doc/DUXNFa2NGTU51cXBP</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="guide.stephenWolfram202302" xml:space="preserve">
+        <source>What Is ChatGPT Doing … and Why Does It Work?</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="guide.stephenWolfram202302Link" xml:space="preserve">
+        <source>https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="link.feedback" xml:space="preserve">
+        <source>https://github.com/b9software/B9ChatAI/discussions</source>
+        <target>https://support.qq.com/product/592777</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="link.homePage" xml:space="preserve">
+        <source>https://github.com/b9software/B9ChatAI</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="link.huggingChat.privacy" xml:space="preserve">
+        <source>https://huggingface.co/chat/privacy</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="link.openai.api-keys" xml:space="preserve">
+        <source>https://platform.openai.com/account/api-keys</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="link.openai.known-proxy" xml:space="preserve">
+        <source/>
+        <target>https://docs.qq.com/doc/DUXhrS2ZCSUZJZGdv</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="link.openai.privacy" xml:space="preserve">
+        <source>https://openai.com/policies/privacy-policy</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="link.openai.tos" xml:space="preserve">
+        <source>https://openai.com/policies/terms-of-use</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="link.userManual" xml:space="preserve">
+        <source>https://github.com/b9software/B9ChatAI/wiki/</source>
+        <target>https://docs.qq.com/doc/DUVVvdVhyaEdZYUxT</target>
         <note/>
       </trans-unit>
       <trans-unit id="menu.archive" xml:space="preserve">
         <source>Archive</source>
         <target>归档</target>
-        <note>Sidebar Menu</note>
+        <note>Sidebar Archive</note>
       </trans-unit>
       <trans-unit id="menu.continueLastTopic" xml:space="preserve">
         <source>Continue Last Topic</source>
@@ -263,6 +337,31 @@ BB9z
         <target>删除</target>
         <note/>
       </trans-unit>
+      <trans-unit id="menu.feedback" xml:space="preserve">
+        <source>Feedback</source>
+        <target>建议与反馈</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="menu.floatMode" xml:space="preserve">
+        <source>Float Mode</source>
+        <target>浮窗模式</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="menu.floatModeCollapse" xml:space="preserve">
+        <source>Collapse Float Window</source>
+        <target>收起浮窗</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="menu.floatModeExit" xml:space="preserve">
+        <source>Exit Float Mode</source>
+        <target>退出浮窗模式</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="menu.floatModeExpand" xml:space="preserve">
+        <source>Expand Float Window</source>
+        <target>展开浮窗</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="menu.focusInput" xml:space="preserve">
         <source>Focus on Input</source>
         <target>切换到输入框</target>
@@ -271,7 +370,7 @@ BB9z
       <trans-unit id="menu.guide" xml:space="preserve">
         <source>Guide</source>
         <target>指南</target>
-        <note>Conversation Menu</note>
+        <note/>
       </trans-unit>
       <trans-unit id="menu.help" xml:space="preserve">
         <source>Help</source>
@@ -284,13 +383,23 @@ BB9z
         <note/>
       </trans-unit>
       <trans-unit id="menu.integrationBookmark" xml:space="preserve">
-        <source>Copy Browser Bookmark</source>
-        <target>拷贝浏览器书签</target>
+        <source>Browser: Copy JavaScript Bookmark</source>
+        <target>浏览器：拷贝书签链接</target>
         <note/>
       </trans-unit>
       <trans-unit id="menu.integrationHelp" xml:space="preserve">
         <source>What's this?</source>
         <target>跨应用调起指南</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="menu.integrationRaycastQuery" xml:space="preserve">
+        <source>Raycast: Copy Quicklinks to Send Content</source>
+        <target>Raycast：拷贝 Quicklinks 用于发送内容</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="menu.integrationRaycastSwitch" xml:space="preserve">
+        <source>Raycast: Copy Quicklinks to Switch Conversations</source>
+        <target>Raycast：拷贝 Quicklinks 链接用于切换会话</target>
         <note/>
       </trans-unit>
       <trans-unit id="menu.navigationBack" xml:space="preserve">
@@ -301,7 +410,7 @@ BB9z
       <trans-unit id="menu.new" xml:space="preserve">
         <source>New</source>
         <target>新建</target>
-        <note>In Application Main Menu</note>
+        <note>File -&gt; New</note>
       </trans-unit>
       <trans-unit id="menu.new.conversation" xml:space="preserve">
         <source>Conversation</source>
@@ -353,11 +462,66 @@ BB9z
         <target>用户手册</target>
         <note/>
       </trans-unit>
+      <trans-unit id="sendIntent.category" xml:space="preserve">
+        <source>Chat</source>
+        <target>聊天</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="sendIntent.conversationDesc" xml:space="preserve">
+        <source>Which conversation the text send to.</source>
+        <target>发送内容到哪一会话</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="sendIntent.conversationInvalid" xml:space="preserve">
+        <source>Choosed conversation is invaild.</source>
+        <target>选中会话已失效</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="sendIntent.conversationTitle" xml:space="preserve">
+        <source>Conversation</source>
+        <target>会话</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="sendIntent.desc" xml:space="preserve">
+        <source>Send text to speifiy conversation. Returns AI response after a while.</source>
+        <target>发送文本到指定会话，AI 处理后返回</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="sendIntent.searchKeyword" xml:space="preserve">
+        <source>text,AI,chat,conversation</source>
+        <target>text,AI,chat,文本,发送,会话</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="sendIntent.textDesc" xml:space="preserve">
+        <source>The content send to the conversation.</source>
+        <target>发送给 AI 的内容</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="sendIntent.textParamDesc" xml:space="preserve">
+        <source>Content to Send</source>
+        <target>发送给 AI 的内容</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="sendIntent.textRequest" xml:space="preserve">
+        <source>Input is empty. Input some new text</source>
+        <target>空文本，请输入新文本</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="sendIntent.textTitle" xml:space="preserve">
+        <source>Text</source>
+        <target>文本</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="sendIntent.title" xml:space="preserve">
+        <source>Get Response from AI</source>
+        <target>从 AI 返回文本</target>
+        <note/>
+      </trans-unit>
     </body>
   </file>
   <file original="App/Scene/Base.lproj/Conversation.storyboard" source-language="en" target-language="zh-Hans" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="14.3" build-num="14E222b"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="14.3.1" build-num="14E300c"/>
     </header>
     <body>
       <trans-unit id="BZf-4c-xax.disabledTitle" xml:space="preserve">
@@ -375,12 +539,12 @@ BB9z
         <note>Class = "UILabel"; text = "Label"; ObjectID = "chat-acrhived-list-cell-name"; Note = "&lt;Pass&gt;";</note>
       </trans-unit>
       <trans-unit id="chat-cell-assistant-text.text" xml:space="preserve">
-        <source>TEXT</source>
-        <note>Class = "UILabel"; text = "TEXT"; ObjectID = "chat-cell-assistant-text";</note>
+        <source>&lt;TEXT&gt;</source>
+        <note>Class = "UILabel"; text = "&lt;TEXT&gt;"; ObjectID = "chat-cell-assistant-text";</note>
       </trans-unit>
       <trans-unit id="chat-cell-my-text.text" xml:space="preserve">
-        <source>TEXT</source>
-        <note>Class = "UILabel"; text = "TEXT"; ObjectID = "chat-cell-my-text";</note>
+        <source>&lt;TEXT&gt;</source>
+        <note>Class = "UILabel"; text = "&lt;TEXT&gt;"; ObjectID = "chat-cell-my-text";</note>
       </trans-unit>
       <trans-unit id="chat-cell-retry.configuration.title" xml:space="preserve">
         <source>Retry</source>
@@ -418,8 +582,8 @@ BB9z
         <note>Class = "UILabel"; text = "Label"; ObjectID = "chat-deleted-list-cell-name"; Note = "&lt;Pass&gt;";</note>
       </trans-unit>
       <trans-unit id="chat-input-action-state.text" xml:space="preserve">
-        <source>STATE</source>
-        <note>Class = "UILabel"; text = "STATE"; ObjectID = "chat-input-action-state";</note>
+        <source>&lt;STATE&gt;</source>
+        <note>Class = "UILabel"; text = "&lt;STATE&gt;"; ObjectID = "chat-input-action-state";</note>
       </trans-unit>
       <trans-unit id="chat-input-continue-action.normalTitle" xml:space="preserve">
         <source>Tell me more</source>
@@ -440,13 +604,18 @@ BB9z
         <note>Class = "UIButton"; selectedTitle = "Reply"; ObjectID = "chat-input-reply-action";</note>
       </trans-unit>
       <trans-unit id="chat-input-send-button.configuration.title" xml:space="preserve">
-        <source>SEND</source>
-        <target>发送</target>
-        <note>Class = "UIButton"; configuration.title = "SEND"; ObjectID = "chat-input-send-button"; Note = "&lt;Pass&gt;";</note>
+        <source>&lt;KEY&gt;</source>
+        <target/>
+        <note>Class = "UIButton"; configuration.title = "&lt;KEY&gt;"; ObjectID = "chat-input-send-button";</note>
+      </trans-unit>
+      <trans-unit id="chat-input-send-button.ibShadowedToolTip" xml:space="preserve">
+        <source>Send Message</source>
+        <target>发送消息</target>
+        <note>Class = "UIButton"; ibShadowedToolTip = "Send Message"; ObjectID = "chat-input-send-button";</note>
       </trans-unit>
       <trans-unit id="chat-input-send-button.normalTitle" xml:space="preserve">
         <source>Button</source>
-        <note>Class = "UIButton"; normalTitle = "Button"; ObjectID = "chat-input-send-button"; Note = "&lt;Pass&gt;";</note>
+        <note>Class = "UIButton"; normalTitle = "Button"; ObjectID = "chat-input-send-button";</note>
       </trans-unit>
       <trans-unit id="chat-setting-cancel-button.configuration.title" xml:space="preserve">
         <source>Cancel</source>
@@ -459,7 +628,7 @@ BB9z
       </trans-unit>
       <trans-unit id="chat-setting-clear-message.configuration.title" xml:space="preserve">
         <source>Clear Conversation</source>
-        <target>清空对话</target>
+        <target>清空会话</target>
         <note>Class = "UIButton"; configuration.title = "Clear Conversation"; ObjectID = "chat-setting-clear-message";</note>
       </trans-unit>
       <trans-unit id="chat-setting-clear-message.normalTitle" xml:space="preserve">
@@ -509,6 +678,21 @@ BB9z
         <target>基本信息</target>
         <note>Class = "UILabel"; text = "Basic Info"; ObjectID = "chat-setting-info";</note>
       </trans-unit>
+      <trans-unit id="chat-setting-max-token-field.placeholder" xml:space="preserve">
+        <source>Unlimited</source>
+        <target>无限制</target>
+        <note>Class = "UITextField"; placeholder = "Unlimited"; ObjectID = "chat-setting-max-token-field";</note>
+      </trans-unit>
+      <trans-unit id="chat-setting-max-token-tip.text" xml:space="preserve">
+        <source>Limit return length</source>
+        <target>限制返回的长度</target>
+        <note>Class = "UILabel"; text = "Limit return length"; ObjectID = "chat-setting-max-token-tip";</note>
+      </trans-unit>
+      <trans-unit id="chat-setting-max-token-title.text" xml:space="preserve">
+        <source>MAX Token</source>
+        <target>MAX Token</target>
+        <note>Class = "UILabel"; text = "MAX Token"; ObjectID = "chat-setting-max-token-title";</note>
+      </trans-unit>
       <trans-unit id="chat-setting-model-cell-name.text" xml:space="preserve">
         <source>NAME</source>
         <note>Class = "UILabel"; text = "NAME"; ObjectID = "chat-setting-model-cell-name";</note>
@@ -539,6 +723,7 @@ BB9z
       </trans-unit>
       <trans-unit id="chat-setting-other-header.text" xml:space="preserve">
         <source>Others</source>
+        <target>其它</target>
         <note>Class = "UILabel"; text = "Others"; ObjectID = "chat-setting-other-header";</note>
       </trans-unit>
       <trans-unit id="chat-setting-parameters.text" xml:space="preserve">
@@ -556,9 +741,9 @@ BB9z
         <note>Class = "UIButton"; normalTitle = "Button"; ObjectID = "chat-setting-save-button";</note>
       </trans-unit>
       <trans-unit id="chat-setting-send-by.text" xml:space="preserve">
-        <source>Send By</source>
+        <source>Send Key</source>
         <target>发送键</target>
-        <note>Class = "UILabel"; text = "Send By"; ObjectID = "chat-setting-send-by";</note>
+        <note>Class = "UILabel"; text = "Send Key"; ObjectID = "chat-setting-send-by";</note>
       </trans-unit>
       <trans-unit id="chat-setting-send-segment.segmentTitles[0]" xml:space="preserve">
         <source>Default</source>
@@ -567,14 +752,17 @@ BB9z
       </trans-unit>
       <trans-unit id="chat-setting-send-segment.segmentTitles[1]" xml:space="preserve">
         <source>⌘⏎</source>
+        <target>⌘⏎</target>
         <note>Class = "UISegmentedControl"; chat-setting-send-segment.segmentTitles[1] = "⌘⏎"; ObjectID = "chat-setting-send-segment";</note>
       </trans-unit>
       <trans-unit id="chat-setting-send-segment.segmentTitles[2]" xml:space="preserve">
         <source>⇧⏎</source>
+        <target>⇧⏎</target>
         <note>Class = "UISegmentedControl"; chat-setting-send-segment.segmentTitles[2] = "⇧⏎"; ObjectID = "chat-setting-send-segment";</note>
       </trans-unit>
       <trans-unit id="chat-setting-send-segment.segmentTitles[3]" xml:space="preserve">
         <source>⏎</source>
+        <target>⏎</target>
         <note>Class = "UISegmentedControl"; chat-setting-send-segment.segmentTitles[3] = "⏎"; ObjectID = "chat-setting-send-segment";</note>
       </trans-unit>
       <trans-unit id="chat-setting-send-tip.text" xml:space="preserve">
@@ -587,9 +775,9 @@ BB9z
         <note>Class = "UILabel"; text = "STATE"; ObjectID = "chat-setting-state-label"; Note = "&lt;Pass&gt;";</note>
       </trans-unit>
       <trans-unit id="chat-setting-system-section.text" xml:space="preserve">
-        <source>System</source>
-        <target>交聚的话题</target>
-        <note>Class = "UILabel"; text = "System"; ObjectID = "chat-setting-system-section";</note>
+        <source>System (Prompts)</source>
+        <target>系统提示语（Prompts）</target>
+        <note>Class = "UILabel"; text = "System (Prompts)"; ObjectID = "chat-setting-system-section";</note>
       </trans-unit>
       <trans-unit id="chat-setting-system-tip.text" xml:space="preserve">
         <source>Helps set the behavior of the assistant.</source>
@@ -598,6 +786,7 @@ BB9z
       </trans-unit>
       <trans-unit id="chat-setting-temerature-section.text" xml:space="preserve">
         <source>Temperature</source>
+        <target>Temperature</target>
         <note>Class = "UILabel"; text = "Temperature"; ObjectID = "chat-setting-temerature-section";</note>
       </trans-unit>
       <trans-unit id="chat-setting-temperature-desc.text" xml:space="preserve">
@@ -615,6 +804,7 @@ BB9z
       </trans-unit>
       <trans-unit id="chat-setting-topp-section.text" xml:space="preserve">
         <source>Top Probability</source>
+        <target>Top Probability</target>
         <note>Class = "UILabel"; text = "Top Probability"; ObjectID = "chat-setting-topp-section";</note>
       </trans-unit>
       <trans-unit id="chat-setting-topp-tip.text" xml:space="preserve">
@@ -635,7 +825,7 @@ BB9z
   </file>
   <file original="App/Scene/Base.lproj/Main.storyboard" source-language="en" target-language="zh-Hans" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="14.3" build-num="14E222b"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="14.3.1" build-num="14E300c"/>
     </header>
     <body>
       <trans-unit id="0Du-9C-AAx.normalTitle" xml:space="preserve">
@@ -667,14 +857,6 @@ BB9z
         <source>标题</source>
         <note>Class = "UILabel"; text = "标题"; ObjectID = "opx-K9-Dwv";</note>
       </trans-unit>
-      <trans-unit id="prE-jm-9k0.segmentTitles[0]" xml:space="preserve">
-        <source>System</source>
-        <note>Class = "UISegmentedControl"; prE-jm-9k0.segmentTitles[0] = "System"; ObjectID = "prE-jm-9k0";</note>
-      </trans-unit>
-      <trans-unit id="prE-jm-9k0.segmentTitles[1]" xml:space="preserve">
-        <source>Second</source>
-        <note>Class = "UISegmentedControl"; prE-jm-9k0.segmentTitles[1] = "Second"; ObjectID = "prE-jm-9k0";</note>
-      </trans-unit>
       <trans-unit id="sidebar-deleted-button.configuration.title" xml:space="preserve">
         <source>Deleted</source>
         <target>已删除</target>
@@ -703,7 +885,7 @@ BB9z
   </file>
   <file original="App/Scene/Base.lproj/Setting.storyboard" source-language="en" target-language="zh-Hans" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="14.3" build-num="14E222b"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="14.3.1" build-num="14E300c"/>
     </header>
     <body>
       <trans-unit id="about-app-title.text" xml:space="preserve">
@@ -729,8 +911,8 @@ BB9z
         <note>Class = "UIButton"; normalTitle = "OpenAI Terms of Use"; ObjectID = "about-openai-term";</note>
       </trans-unit>
       <trans-unit id="about-privacy-content.text" xml:space="preserve">
-        <source>CONTENT</source>
-        <note>Class = "UILabel"; text = "CONTENT"; ObjectID = "about-privacy-content";</note>
+        <source>&lt;CONTENT&gt;</source>
+        <note>Class = "UILabel"; text = "&lt;CONTENT&gt;"; ObjectID = "about-privacy-content";</note>
       </trans-unit>
       <trans-unit id="about-privacy.text" xml:space="preserve">
         <source>Privacy</source>
@@ -748,52 +930,113 @@ BB9z
         <note>Class = "UIViewController"; title = "About"; ObjectID = "about-vc";</note>
       </trans-unit>
       <trans-unit id="about-version.text" xml:space="preserve">
-        <source>VERSION</source>
-        <note>Class = "UILabel"; text = "VERSION"; ObjectID = "about-version";</note>
+        <source>&lt;VERSION&gt;</source>
+        <note>Class = "UILabel"; text = "&lt;VERSION&gt;"; ObjectID = "about-version";</note>
       </trans-unit>
-      <trans-unit id="engine-create-cancel.configuration.title" xml:space="preserve">
-        <source>Cancel</source>
-        <target>取消</target>
-        <note>Class = "UIButton"; configuration.title = "Cancel"; ObjectID = "engine-create-cancel";</note>
+      <trans-unit id="engine-create-api-bottom-link.configuration.title" xml:space="preserve">
+        <source>View your API keys</source>
+        <target>查看你的 API 密钥</target>
+        <note>Class = "UIButton"; configuration.title = "View your API keys"; ObjectID = "engine-create-api-bottom-link";</note>
       </trans-unit>
-      <trans-unit id="engine-create-cancel.normalTitle" xml:space="preserve">
+      <trans-unit id="engine-create-api-key.placeholder" xml:space="preserve">
+        <source>Enter your API key</source>
+        <target>请输入 OpenAI API 密钥</target>
+        <note>Class = "UITextField"; placeholder = "Enter your API key"; ObjectID = "engine-create-api-key";</note>
+      </trans-unit>
+      <trans-unit id="engine-create-api-log.text" xml:space="preserve">
+        <source>&lt;LOG&gt;</source>
+        <note>Class = "UILabel"; text = "&lt;LOG&gt;"; ObjectID = "engine-create-api-log"; Note = "&lt;Pass&gt;";</note>
+      </trans-unit>
+      <trans-unit id="engine-create-api-submit.normalTitle" xml:space="preserve">
         <source>Button</source>
-        <note>Class = "UIButton"; normalTitle = "Button"; ObjectID = "engine-create-cancel";</note>
+        <note>Class = "UIButton"; normalTitle = "Button"; ObjectID = "engine-create-api-submit";</note>
       </trans-unit>
-      <trans-unit id="engine-create-type-0.title" xml:space="preserve">
+      <trans-unit id="engine-create-api-vc.title" xml:space="preserve">
+        <source>New OpenAI Engine</source>
+        <target>新 OpenAI 引擎</target>
+        <note>Class = "UIViewController"; title = "New OpenAI Engine"; ObjectID = "engine-create-api-vc";</note>
+      </trans-unit>
+      <trans-unit id="engine-create-proxy-address.placeholder" xml:space="preserve">
+        <source>https://proxy-address.com</source>
+        <note>Class = "UITextField"; placeholder = "https://proxy-address.com"; ObjectID = "engine-create-proxy-address";</note>
+      </trans-unit>
+      <trans-unit id="engine-create-proxy-advanced.normalTitle" xml:space="preserve">
+        <source>Advanced</source>
+        <target>进阶设置</target>
+        <note>Class = "UIButton"; normalTitle = "Advanced"; ObjectID = "engine-create-proxy-advanced";</note>
+      </trans-unit>
+      <trans-unit id="engine-create-proxy-completion-label.text" xml:space="preserve">
+        <source>Completions endpoint</source>
+        <target>Completions 接口地址</target>
+        <note>Class = "UILabel"; text = "Completions endpoint"; ObjectID = "engine-create-proxy-completion-label";</note>
+      </trans-unit>
+      <trans-unit id="engine-create-proxy-key.placeholder" xml:space="preserve">
+        <source>Enter your API key</source>
+        <target>请输入 OpenAI API 密钥</target>
+        <note>Class = "UITextField"; placeholder = "Enter your API key"; ObjectID = "engine-create-proxy-key";</note>
+      </trans-unit>
+      <trans-unit id="engine-create-proxy-known-link.configuration.title" xml:space="preserve">
+        <source>Known Service</source>
+        <target>已知的第三方服务</target>
+        <note>Class = "UIButton"; configuration.title = "Known Service"; ObjectID = "engine-create-proxy-known-link";</note>
+      </trans-unit>
+      <trans-unit id="engine-create-proxy-log.text" xml:space="preserve">
+        <source>&lt;LOG&gt;</source>
+        <note>Class = "UILabel"; text = "&lt;LOG&gt;"; ObjectID = "engine-create-proxy-log"; Note = "&lt;Pass&gt;";</note>
+      </trans-unit>
+      <trans-unit id="engine-create-proxy-model-label.text" xml:space="preserve">
+        <source>Models endpoint</source>
+        <target>Models 接口地址</target>
+        <note>Class = "UILabel"; text = "Models endpoint"; ObjectID = "engine-create-proxy-model-label";</note>
+      </trans-unit>
+      <trans-unit id="engine-create-proxy-sendkey-label.text" xml:space="preserve">
+        <source>Send your key?</source>
+        <target>需要发送自己的密钥</target>
+        <note>Class = "UILabel"; text = "Send your key?"; ObjectID = "engine-create-proxy-sendkey-label";</note>
+      </trans-unit>
+      <trans-unit id="engine-create-proxy-submit.configuration.title" xml:space="preserve">
+        <source>Create</source>
+        <target>创建</target>
+        <note>Class = "UIButton"; configuration.title = "Create"; ObjectID = "engine-create-proxy-submit";</note>
+      </trans-unit>
+      <trans-unit id="engine-create-proxy-vc.title" xml:space="preserve">
+        <source>New OpenAI Proxy Engine</source>
+        <target>新 OpenAI 代理服务</target>
+        <note>Class = "UIViewController"; title = "New OpenAI Proxy Engine"; ObjectID = "engine-create-proxy-vc";</note>
+      </trans-unit>
+      <trans-unit id="engine-create-type-cell-api-detail.text" xml:space="preserve">
+        <source>&lt;DETAIL&gt;</source>
+        <note>Class = "UILabel"; text = "&lt;DETAIL&gt;"; ObjectID = "engine-create-type-cell-api-detail"; Note = "&lt;Pass&gt;";</note>
+      </trans-unit>
+      <trans-unit id="engine-create-type-cell-api-name.text" xml:space="preserve">
+        <source>&lt;NAME&gt;</source>
+        <note>Class = "UILabel"; text = "&lt;NAME&gt;"; ObjectID = "engine-create-type-cell-api-name"; Note = "&lt;Pass&gt;";</note>
+      </trans-unit>
+      <trans-unit id="engine-create-type-cell-proxy-detail.text" xml:space="preserve">
+        <source>&lt;DETAIL&gt;</source>
+        <note>Class = "UILabel"; text = "&lt;DETAIL&gt;"; ObjectID = "engine-create-type-cell-proxy-detail"; Note = "&lt;Pass&gt;";</note>
+      </trans-unit>
+      <trans-unit id="engine-create-type-cell-proxy-name.text" xml:space="preserve">
+        <source>&lt;NAME&gt;</source>
+        <note>Class = "UILabel"; text = "&lt;NAME&gt;"; ObjectID = "engine-create-type-cell-proxy-name"; Note = "&lt;Pass&gt;";</note>
+      </trans-unit>
+      <trans-unit id="engine-create-type-header.text" xml:space="preserve">
         <source>Choose Type</source>
         <target>选择类型</target>
-        <note>Class = "UICommand"; title = "Choose Type"; ObjectID = "engine-create-type-0";</note>
+        <note>Class = "UILabel"; text = "Choose Type"; ObjectID = "engine-create-type-header";</note>
       </trans-unit>
-      <trans-unit id="engine-create-type-1.discoverabilityTitle" xml:space="preserve">
-        <source>Use offical OpenAI API</source>
-        <target>使用 OpenAI 官方的 API</target>
-        <note>Class = "UICommand"; discoverabilityTitle = "Use offical OpenAI API"; ObjectID = "engine-create-type-1";</note>
-      </trans-unit>
-      <trans-unit id="engine-create-type-1.title" xml:space="preserve">
-        <source>ChatGPT / OpenAI API</source>
-        <note>Class = "UICommand"; title = "ChatGPT / OpenAI API"; ObjectID = "engine-create-type-1";</note>
-      </trans-unit>
-      <trans-unit id="engine-create-type-2.discoverabilityTitle" xml:space="preserve">
-        <source>Use a proxy server foward requests to OpenAI API</source>
-        <target>使用第三方中转代理服务器访问 OpenAI 的接口</target>
-        <note>Class = "UICommand"; discoverabilityTitle = "Use a proxy server foward requests to OpenAI API"; ObjectID = "engine-create-type-2";</note>
-      </trans-unit>
-      <trans-unit id="engine-create-type-2.title" xml:space="preserve">
-        <source>ChatGPT / OpenAI Proxy</source>
-        <note>Class = "UICommand"; title = "ChatGPT / OpenAI Proxy"; ObjectID = "engine-create-type-2";</note>
-      </trans-unit>
-      <trans-unit id="engine-create-type-proxy-comming.text" xml:space="preserve">
-        <source>Comming Soon</source>
-        <note>Class = "UILabel"; text = "Comming Soon"; ObjectID = "engine-create-type-proxy-comming";</note>
+      <trans-unit id="engine-create-type-vc.title" xml:space="preserve">
+        <source>Create New Engine</source>
+        <target>创建新引擎</target>
+        <note>Class = "UIViewController"; title = "Create New Engine"; ObjectID = "engine-create-type-vc";</note>
       </trans-unit>
       <trans-unit id="engine-list-cell-name.text" xml:space="preserve">
-        <source>NAME</source>
-        <note>Class = "UILabel"; text = "NAME"; ObjectID = "engine-list-cell-name"; Note = "&lt;Pass&gt;";</note>
+        <source>&lt;NAME&gt;</source>
+        <note>Class = "UILabel"; text = "&lt;NAME&gt;"; ObjectID = "engine-list-cell-name"; Note = "&lt;Pass&gt;";</note>
       </trans-unit>
       <trans-unit id="engine-list-cell-type.text" xml:space="preserve">
-        <source>TYPE</source>
-        <note>Class = "UILabel"; text = "TYPE"; ObjectID = "engine-list-cell-type"; Note = "&lt;Pass&gt;";</note>
+        <source>&lt;TYPE&gt;</source>
+        <note>Class = "UILabel"; text = "&lt;TYPE&gt;"; ObjectID = "engine-list-cell-type"; Note = "&lt;Pass&gt;";</note>
       </trans-unit>
       <trans-unit id="engine-manage-add-button.configuration.title" xml:space="preserve">
         <source>Add new</source>
@@ -803,33 +1046,6 @@ BB9z
       <trans-unit id="engine-manage-add-button.normalTitle" xml:space="preserve">
         <source>Button</source>
         <note>Class = "UIButton"; normalTitle = "Button"; ObjectID = "engine-manage-add-button";</note>
-      </trans-unit>
-      <trans-unit id="engine-manage-api-key-field.placeholder" xml:space="preserve">
-        <source>Enter your API key</source>
-        <target>请输入你的 API Key</target>
-        <note>Class = "UITextField"; placeholder = "Enter your API key"; ObjectID = "engine-manage-api-key-field";</note>
-      </trans-unit>
-      <trans-unit id="engine-manage-api-key-send.normalTitle" xml:space="preserve">
-        <source>Button</source>
-        <note>Class = "UIButton"; normalTitle = "Button"; ObjectID = "engine-manage-api-key-send";</note>
-      </trans-unit>
-      <trans-unit id="engine-manage-choose-type-first.text" xml:space="preserve">
-        <source>⬆️ Choose a type first</source>
-        <target>⬆️ 请先选择引擎类型</target>
-        <note>Class = "UILabel"; text = "⬆️ Choose a type first"; ObjectID = "engine-manage-choose-type-first";</note>
-      </trans-unit>
-      <trans-unit id="engine-manage-log.text" xml:space="preserve">
-        <source>Log here</source>
-        <note>Class = "UILabel"; text = "Log here"; ObjectID = "engine-manage-log"; Note = "&lt;Pass&gt;";</note>
-      </trans-unit>
-      <trans-unit id="engine-manage-type-no-selection.configuration.title" xml:space="preserve">
-        <source>Choose Type</source>
-        <target>引擎类型</target>
-        <note>Class = "UIButton"; configuration.title = "Choose Type"; ObjectID = "engine-manage-type-no-selection";</note>
-      </trans-unit>
-      <trans-unit id="engine-manage-type-no-selection.normalTitle" xml:space="preserve">
-        <source>Button</source>
-        <note>Class = "UIButton"; normalTitle = "Button"; ObjectID = "engine-manage-type-no-selection";</note>
       </trans-unit>
       <trans-unit id="engine-manage-vc.title" xml:space="preserve">
         <source>Engine Manage</source>
@@ -860,25 +1076,47 @@ BB9z
         <target>行为调整</target>
         <note>Class = "UILabel"; text = "Behaviours"; ObjectID = "setting-behaviour-section";</note>
       </trans-unit>
-      <trans-unit id="setting-engine-config-button.configuration.title" xml:space="preserve">
-        <source>Configuration</source>
-        <target>配置引擎</target>
-        <note>Class = "UIButton"; configuration.title = "Configuration"; ObjectID = "setting-engine-config-button";</note>
+      <trans-unit id="setting-conversation-order-create.title" xml:space="preserve">
+        <source>Create Time</source>
+        <note>Class = "UICommand"; title = "Create Time"; ObjectID = "setting-conversation-order-create";</note>
       </trans-unit>
-      <trans-unit id="setting-engine-config-button.normalTitle" xml:space="preserve">
-        <source>Configuration</source>
-        <target>配置引擎</target>
-        <note>Class = "UIButton"; normalTitle = "Configuration"; ObjectID = "setting-engine-config-button";</note>
+      <trans-unit id="setting-conversation-order-message.title" xml:space="preserve">
+        <source>Last Message</source>
+        <note>Class = "UICommand"; title = "Last Message"; ObjectID = "setting-conversation-order-message";</note>
+      </trans-unit>
+      <trans-unit id="setting-conversation-order-title.text" xml:space="preserve">
+        <source>Conversation List Order</source>
+        <note>Class = "UILabel"; text = "Conversation List Order"; ObjectID = "setting-conversation-order-title";</note>
+      </trans-unit>
+      <trans-unit id="setting-engine-add-button.configuration.title" xml:space="preserve">
+        <source>Add new</source>
+        <target>添加新引擎</target>
+        <note>Class = "UIButton"; configuration.title = "Add new"; ObjectID = "setting-engine-add-button";</note>
+      </trans-unit>
+      <trans-unit id="setting-engine-config-button.configuration.title" xml:space="preserve">
+        <source>Management</source>
+        <target>管理引擎</target>
+        <note>Class = "UIButton"; configuration.title = "Management"; ObjectID = "setting-engine-config-button";</note>
       </trans-unit>
       <trans-unit id="setting-engine-section.text" xml:space="preserve">
         <source>Engines</source>
         <target>AI 引擎</target>
         <note>Class = "UILabel"; text = "Engines"; ObjectID = "setting-engine-section";</note>
       </trans-unit>
+      <trans-unit id="setting-float-window-alpha-tip.text" xml:space="preserve">
+        <source>Transparency of the window in floating mode when it is not active</source>
+        <target>非激活状态的浮窗透明度</target>
+        <note>Class = "UILabel"; text = "Transparency of the window in floating mode when it is not active"; ObjectID = "setting-float-window-alpha-tip";</note>
+      </trans-unit>
+      <trans-unit id="setting-float-window-alpha-title.text" xml:space="preserve">
+        <source>Float window alpha</source>
+        <target>浮窗透明度</target>
+        <note>Class = "UILabel"; text = "Float window alpha"; ObjectID = "setting-float-window-alpha-title";</note>
+      </trans-unit>
       <trans-unit id="setting-font-size-title.text" xml:space="preserve">
-        <source>Font Size</source>
+        <source>Font size</source>
         <target>文字大小</target>
-        <note>Class = "UILabel"; text = "Font Size"; ObjectID = "setting-font-size-title";</note>
+        <note>Class = "UILabel"; text = "Font size"; ObjectID = "setting-font-size-title";</note>
       </trans-unit>
       <trans-unit id="setting-key-tip-auto-copy.text" xml:space="preserve">
         <source>You can select cell content by double-clicking</source>
@@ -898,8 +1136,8 @@ Try it now by pressing the Tab (+shift) key and arrow keys.</source>
         <note>Class = "UILabel"; text = "Key Bindings"; ObjectID = "setting-keys-section";</note>
       </trans-unit>
       <trans-unit id="setting-send-by-key.text" xml:space="preserve">
-        <source>KEY</source>
-        <note>Class = "UILabel"; text = "KEY"; ObjectID = "setting-send-by-key";</note>
+        <source>&lt;KEY&gt;</source>
+        <note>Class = "UILabel"; text = "&lt;KEY&gt;"; ObjectID = "setting-send-by-key";</note>
       </trans-unit>
       <trans-unit id="setting-send-by-segment.segmentTitles[0]" xml:space="preserve">
         <source>⌘⏎</source>
@@ -914,9 +1152,9 @@ Try it now by pressing the Tab (+shift) key and arrow keys.</source>
         <note>Class = "UISegmentedControl"; setting-send-by-segment.segmentTitles[2] = "⏎"; ObjectID = "setting-send-by-segment";</note>
       </trans-unit>
       <trans-unit id="setting-send-by-title.text" xml:space="preserve">
-        <source>Send By</source>
-        <target>发送键</target>
-        <note>Class = "UILabel"; text = "Send By"; ObjectID = "setting-send-by-title";</note>
+        <source>Default send key</source>
+        <target>默认发送键</target>
+        <note>Class = "UILabel"; text = "Default send key"; ObjectID = "setting-send-by-title";</note>
       </trans-unit>
       <trans-unit id="setting-theme-dark.title" xml:space="preserve">
         <source>Dark</source>
@@ -947,12 +1185,12 @@ Try it now by pressing the Tab (+shift) key and arrow keys.</source>
   </file>
   <file original="SchemePlayground/Base.lproj/Localizable.strings" source-language="en" target-language="zh-Hans" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="14.3" build-num="14E222b"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="14.3.1" build-num="14E300c"/>
     </header>
     <body>
       <trans-unit id="guide.interCommunicationLink" xml:space="preserve">
         <source>https://github.com/b9software/B9ChatAI/wiki/Inter-App-Communication</source>
-        <target>https://bb9z.feishu.cn/docx/WTmZdvBE7ovHUzxxSK5cQBIHnYd#SwWidyUSqoIMocxiUlncBspOnwd</target>
+        <target>https://docs.qq.com/doc/DUXNFa2NGTU51cXBP</target>
         <note>Localizable.strings
   B9ChatAI
 
@@ -962,7 +1200,7 @@ Try it now by pressing the Tab (+shift) key and arrow keys.</source>
   </file>
   <file original="SchemePlayground/Base.lproj/Scheme.storyboard" source-language="en" target-language="zh-Hans" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="14.3" build-num="14E222b"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="14.3.1" build-num="14E300c"/>
     </header>
     <body>
       <trans-unit id="0N8-aw-dmw.text" xml:space="preserve">
@@ -1034,7 +1272,7 @@ Try it now by pressing the Tab (+shift) key and arrow keys.</source>
   </file>
   <file original="SchemePlayground/en.lproj/InfoPlist.strings" datatype="plaintext" source-language="en" target-language="zh-Hans">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="14.3" build-num="14E222b"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="14.3.1" build-num="14E300c"/>
     </header>
     <body>
       <trans-unit id="CFBundleName" xml:space="preserve">

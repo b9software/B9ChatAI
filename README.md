@@ -6,13 +6,11 @@
 
 中文用户请移步至 [docs.qq.com/doc/DUVVvdVhyaEdZYUxT](https://docs.qq.com/doc/DUVVvdVhyaEdZYUxT)
 
-<!--
-The latest version is available on the Mac App Store.
+Download from the [release page](https://github.com/b9software/B9ChatAI/releases).
 
-[![Download on the Mac App Store](Assets/app_store_mac_download.svg)](https://apps.apple.com/us/app/b9chatai/id6446579557)
--->
-
-⚠️ v0.3 Still waiting for review since 2023-04-27 08:34+0800.
+> **This app will not available on the Mac App Store**
+>
+> I developed this application solely to meet my own needs, but if I need to launch it on the App Store, I must add a sales API usage function, which goes against my original intention of creating a clean client.
 
 <details><summary>Screenshots :eye:</summary>
 
@@ -22,6 +20,8 @@ The latest version is available on the Mac App Store.
 ![Settings](https://user-images.githubusercontent.com/513082/234133039-4ad3266b-d4d2-4b8c-958c-3492dc231145.png)
 
 </details>
+
+The source code is available on [another repository](https://github.com/b9software/134.ChatAI).
 
 ## Where to go
 
@@ -45,21 +45,9 @@ The latest version is available on the Mac App Store.
   2. Enhancing existing translations or translating the application into other languages.
   3. I would like to add support for more engines, such as Claude and Azure OpenAI. If you can provide a testing API Key, that would be very helpful. Contact me via Twitter direct message [@BB9z](https://twitter.com/BB9z) or [Slack](https://join.slack.com/t/bb9z/shared_invite/zt-1thxa7xsm-yHt4ifZd~qxj0Ko~grnP0Q).
 
-## Long Term Planning
-
-* Open Source
-
-  This project will be open source definitely, but not at the moment. I will choose the appropriate time to make it open source. The deadline for this is January 1, 2024.
-
-* Price
-
-  The application is a one-time purchase and will never adopt a subscription model.
-
-  This app will be free for a limited time. Whenever there is a major update to the app, the price tier may be raised by one level. I will lower the price tier for one week before increasing it.
-
 ## Beta Testing Channel
 
-This channel is for testing new features. Please note that the beta version may not always be the latest compared to the App Store version.
+This channel is for testing new features. Please note that the beta version may not be stable.
 
 <https://testflight.apple.com/join/ATSq4vfs>
 

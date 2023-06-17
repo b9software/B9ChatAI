@@ -1,8 +1,10 @@
 
 "cancel" = "Cancel";
+"genral-error.invalid-url" = "\"%@\" is not a valid URL.";
 
-// In Application Main Menu
+// MARK: In Application Main Menu
 
+// File -> New
 "menu.new" = "New";
 "menu.new.conversation" = "Conversation";
 "menu.new.tab" = "Window Tab";
@@ -13,24 +15,36 @@
 "menu.navigationBack" = "Go Back";
 "menu.continueLastTopic" = "Continue Last Topic";
 "menu.focusInput" = "Focus on Input";
+"menu.floatMode" = "Float Mode";
+"menu.floatModeExpand" = "Expand Float Window";
+"menu.floatModeCollapse" = "Collapse Float Window";
+"menu.floatModeExit" = "Exit Float Mode";
 "menu.help" = "Help";
 "menu.homePage" = "Project on GitHub";
 "menu.userManual" = "Online User Manual";
+"menu.feedback" = "Feedback";
 
-// Sidebar Menu
+// MARK: Sidebar Menu
 
+// Sidebar Archive
 "menu.archive" = "Archive";
 "menu.delete" = "Delete";
 "menu.setting" = "Settings";
 
-// Conversation Menu
+// MARK: Conversation Menu
 
+//
 "menu.guide" = "Guide";
 "menu.retry" = "Retry";
 "menu.integrationHelp" = "What's this?";
-"menu.integrationBookmark" = "Copy Browser Bookmark";
+"menu.integrationBookmark" = "Browser: Copy JavaScript Bookmark";
+"menu.integrationRaycastQuery" = "Raycast: Copy Quicklinks to Send Content";
+"menu.integrationRaycastSwitch" = "Raycast: Copy Quicklinks to Switch Conversations";
 "menu.send" = "Send Input";
 
+// MARK: - Chat
+
+//
 "chat.defaultTitle" = "New Chat";
 "chat.archived" = "Archived";
 "chat.unArchive" = "Unarchive";
@@ -59,6 +73,19 @@
 "chat.setting.clearAlertMessage" = "This operation can't be undone.";
 "chat.setting.clearAlertConfirm" = "Clear";
 
+"chat.send.engineNotSet" = "Conversation engine has not been set.";
+"chat.send.engineNoLoad" = "Unable load conversation engine.";
+
+// MARK: Engine
+
+//
+"engine.create.type-openai.title" = "ChatGPT / OpenAI";
+"engine.create.type-openai.detail" = "Use offical OpenAI API";
+"engine.create.type-openai-proxy.title" = "ChatGPT / API Proxy";
+"engine.create.type-openai-proxy.detail" = "Use a proxy server foward requests to OpenAI API";
+
+"engine.create.no-key-given" = "Please input a valid API key.";
+"engine.create.no-proxy-address-given" = "Please input a valid proxy address.";
 "engine.create.step-verify" = "Verifying....";
 "engine.create.step-models" = "Checking models...";
 "engine.create.step-list-gpt" = "Available GPT models: %@";
@@ -67,11 +94,44 @@
 "engine.create.unrecognized-chat-warning" = "It seems that the chat content is not read properly, please check if there is a new version of B9ChatAI.";
 "engine.create.fail.hash-key" = "Unable to generate secure data for key.";
 "engine.create.fail.exist-key" = "Engine with the given key already exist.";
+"engine.create.fail.exist-proxy" = "Engine with the same proxy config already exist.";
 
+// MARK: Intent
+
+//
+"sendIntent.title" = "Get Response from AI";
+"sendIntent.desc" = "Send text to speifiy conversation. Returns AI response after a while.";
+"sendIntent.category" = "Chat";
+"sendIntent.searchKeyword" = "text,AI,chat,conversation";
+"sendIntent.conversationTitle" = "Conversation";
+"sendIntent.conversationDesc" = "Which conversation the text send to.";
+"sendIntent.conversationInvalid" = "Choosed conversation is invaild.";
+"sendIntent.textTitle" = "Text";
+"sendIntent.textDesc" = "The content send to the conversation.";
+"sendIntent.textRequest" = "Input is empty. Input some new text";
+"sendIntent.textParamDesc" = "Content to Send";
+
+"Send ${text} to ${conversation}" = "Send ${text} to ${conversation}";
+"Send text to ${applicationName}" = "Send text to ${applicationName}";
+"Proccess text with ${applicationName}" = "Proccess text with ${applicationName}";
+
+// MARK: App
+
+//
 "app.name" = "B9ChatAI";
 "app.privacy-sort" = "B9ChatAI does not collect any of your data, and all data is under your control.\n\nHowever, when using the application, third-party services may be called upon, which may collect your information. While you have control over which services are called upon, it is still important for you to be vigilant about protecting your information, carefully read and understand the privacy policies of related services, and be especially cautious when using proxy servers provided by third parties.";
-"app.homePage" = "https://github.com/b9software/B9ChatAI";
-"app.userManual" = "https://github.com/b9software/B9ChatAI/wiki/";
 
-"guide.text1st" = "Dear user,\n\nThank you for downloading my app. Currently, an OpenAI account or API key is required to use the app. However, I will be adding support for more engines in the future.\n\nPlease note that this application is still in the early stages of development. In addition to the current features, many more are still in progress. I appreciate your patience and understanding as I work to improve the app.\n\nFor a list of known issues, please refer to the following link:\n https://github.com/b9software/B9ChatAI/issues/1\n\nThank you for your understanding and support.\n\nBest regards,\n\nBB9z\n\n2023-04-16";
 "guide.interCommunicationLink" = "https://github.com/b9software/B9ChatAI/wiki/Inter-App-Communication";
+"guide.gptBestPractices" = "GPT best practices";
+"guide.gptBestPracticesLink" = "https://platform.openai.com/docs/guides/gpt-best-practices";
+"guide.stephenWolfram202302" = "What Is ChatGPT Doing … and Why Does It Work?";
+"guide.stephenWolfram202302Link" = "https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work";
+
+"link.homePage" = "https://github.com/b9software/B9ChatAI";
+"link.userManual" = "https://github.com/b9software/B9ChatAI/wiki/";
+"link.huggingChat.privacy" = "https://huggingface.co/chat/privacy";
+"link.openai.privacy" = "https://openai.com/policies/privacy-policy";
+"link.openai.tos" = "https://openai.com/policies/terms-of-use";
+"link.openai.api-keys" = "https://platform.openai.com/account/api-keys";
+"link.openai.known-proxy" = "";
+"link.feedback" = "https://github.com/b9software/B9ChatAI/discussions";
