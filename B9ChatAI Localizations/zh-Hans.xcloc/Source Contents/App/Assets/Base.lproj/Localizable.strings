@@ -11,14 +11,20 @@
 "menu.new.window" = "Window";
 "menu.settingApp" = "Application Settings";
 "menu.settingChat" = "Conversation Settings";
+
+// Operations
 "menu.operation" = "Operation";
 "menu.navigationBack" = "Go Back";
 "menu.continueLastTopic" = "Continue Last Topic";
+
+// Window
 "menu.focusInput" = "Focus on Input";
 "menu.floatMode" = "Float Mode";
 "menu.floatModeExpand" = "Expand Float Window";
 "menu.floatModeCollapse" = "Collapse Float Window";
 "menu.floatModeExit" = "Exit Float Mode";
+
+// Help
 "menu.help" = "Help";
 "menu.homePage" = "Project on GitHub";
 "menu.userManual" = "Online User Manual";
@@ -26,6 +32,7 @@
 
 // MARK: Sidebar Menu
 
+"menu.navigationSidebar" = "Sidebar";
 // Sidebar Archive
 "menu.archive" = "Archive";
 "menu.delete" = "Delete";
@@ -132,6 +139,6 @@
 "link.huggingChat.privacy" = "https://huggingface.co/chat/privacy";
 "link.openai.privacy" = "https://openai.com/policies/privacy-policy";
 "link.openai.tos" = "https://openai.com/policies/terms-of-use";
-"link.openai.api-keys" = "https://platform.openai.com/account/api-keys";
+"link.openai.api-keys" = "https://platform.openai.com/api-keys";
 "link.openai.known-proxy" = "";
 "link.feedback" = "https://github.com/b9software/B9ChatAI/discussions";

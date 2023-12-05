@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="ipad7_9" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -79,14 +79,14 @@
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="3hW-8e-NzE" customClass="ConversationCell" customModule="B9ChatAI" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="131" width="300" height="53.5"/>
+                                        <rect key="frame" x="0.0" y="131" width="300" height="53"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3hW-8e-NzE" id="Pqy-zi-ruw">
-                                            <rect key="frame" x="0.0" y="0.0" width="300" height="53.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="53"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000001192092896" adjustsLetterSpacingToFitWidth="YES" showsExpansionTextWhenTruncated="YES" translatesAutoresizingMaskIntoConstraints="NO" id="chat-deleted-list-cell-name">
-                                                    <rect key="frame" x="26" y="16" width="248" height="21.5"/>
+                                                    <rect key="frame" x="26" y="16" width="248" height="21"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -300,7 +300,7 @@
                                                                         <outlet property="textView" destination="bh2-h6-tkH" id="pDd-Vl-PGd"/>
                                                                     </connections>
                                                                 </label>
-                                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="300" placeholderIntrinsicHeight="30" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bh2-h6-tkH">
+                                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="300" placeholderIntrinsicHeight="30" textAlignment="natural" adjustsFontForContentSizeCategory="YES" layoutManager="textKit2" translatesAutoresizingMaskIntoConstraints="NO" id="bh2-h6-tkH">
                                                                     <rect key="frame" x="0.0" y="0.0" width="300" height="40.5"/>
                                                                     <color key="textColor" systemColor="labelColor"/>
                                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
@@ -1773,7 +1773,7 @@
         <image name="blank" width="1" height="1"/>
         <image name="checkbox_off" width="18" height="18"/>
         <image name="checkbox_on" width="18" height="18"/>
-        <image name="clipboard" catalog="system" width="103" height="128"/>
+        <image name="clipboard" catalog="system" width="98" height="128"/>
         <image name="input_box" width="11" height="11"/>
         <image name="slider.vertical.3" catalog="system" width="128" height="110"/>
         <image name="xmark.circle.fill" catalog="system" width="128" height="123"/>
@@ -1796,7 +1796,7 @@
             <color red="0.0" green="0.0" blue="0.0" alpha="0.60000002384185791" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="App/Assets/Base.lproj/InfoPlist.strings" datatype="plaintext" source-language="en" target-language="zh-Hans">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="14.3.1" build-num="14E300c"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0.1" build-num="15A507"/>
     </header>
     <body>
       <trans-unit id="CFBundleName" xml:space="preserve">
@@ -13,7 +13,7 @@
   </file>
   <file original="App/Assets/Base.lproj/Localizable.strings" source-language="en" target-language="zh-Hans" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="14.3.1" build-num="14E300c"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0.1" build-num="15A507"/>
     </header>
     <body>
       <trans-unit id="Proccess text with ${applicationName}" xml:space="preserve">
@@ -268,6 +268,7 @@ However, when using the application, third-party services may be called upon, wh
       </trans-unit>
       <trans-unit id="guide.gptBestPractices" xml:space="preserve">
         <source>GPT best practices</source>
+        <target>GPT 最佳实践（英文）</target>
         <note/>
       </trans-unit>
       <trans-unit id="guide.gptBestPracticesLink" xml:space="preserve">
@@ -301,7 +302,7 @@ However, when using the application, third-party services may be called upon, wh
         <note/>
       </trans-unit>
       <trans-unit id="link.openai.api-keys" xml:space="preserve">
-        <source>https://platform.openai.com/account/api-keys</source>
+        <source>https://platform.openai.com/api-keys</source>
         <note/>
       </trans-unit>
       <trans-unit id="link.openai.known-proxy" xml:space="preserve">
@@ -365,7 +366,7 @@ However, when using the application, third-party services may be called upon, wh
       <trans-unit id="menu.focusInput" xml:space="preserve">
         <source>Focus on Input</source>
         <target>切换到输入框</target>
-        <note/>
+        <note>Window</note>
       </trans-unit>
       <trans-unit id="menu.guide" xml:space="preserve">
         <source>Guide</source>
@@ -375,7 +376,7 @@ However, when using the application, third-party services may be called upon, wh
       <trans-unit id="menu.help" xml:space="preserve">
         <source>Help</source>
         <target>帮助</target>
-        <note/>
+        <note>Help</note>
       </trans-unit>
       <trans-unit id="menu.homePage" xml:space="preserve">
         <source>Project on GitHub</source>
@@ -407,6 +408,10 @@ However, when using the application, third-party services may be called upon, wh
         <target>返回</target>
         <note/>
       </trans-unit>
+      <trans-unit id="menu.navigationSidebar" xml:space="preserve">
+        <source>Sidebar</source>
+        <note>MARK: Sidebar Menu</note>
+      </trans-unit>
       <trans-unit id="menu.new" xml:space="preserve">
         <source>New</source>
         <target>新建</target>
@@ -430,7 +435,7 @@ However, when using the application, third-party services may be called upon, wh
       <trans-unit id="menu.operation" xml:space="preserve">
         <source>Operation</source>
         <target>操作</target>
-        <note/>
+        <note>Operations</note>
       </trans-unit>
       <trans-unit id="menu.retry" xml:space="preserve">
         <source>Retry</source>
@@ -521,7 +526,7 @@ However, when using the application, third-party services may be called upon, wh
   </file>
   <file original="App/Scene/Base.lproj/Conversation.storyboard" source-language="en" target-language="zh-Hans" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="14.3.1" build-num="14E300c"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0.1" build-num="15A507"/>
     </header>
     <body>
       <trans-unit id="BZf-4c-xax.disabledTitle" xml:space="preserve">
@@ -825,7 +830,7 @@ However, when using the application, third-party services may be called upon, wh
   </file>
   <file original="App/Scene/Base.lproj/Main.storyboard" source-language="en" target-language="zh-Hans" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="14.3.1" build-num="14E300c"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0.1" build-num="15A507"/>
     </header>
     <body>
       <trans-unit id="0Du-9C-AAx.normalTitle" xml:space="preserve">
@@ -885,7 +890,7 @@ However, when using the application, third-party services may be called upon, wh
   </file>
   <file original="App/Scene/Base.lproj/Setting.storyboard" source-language="en" target-language="zh-Hans" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="14.3.1" build-num="14E300c"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0.1" build-num="15A507"/>
     </header>
     <body>
       <trans-unit id="about-app-title.text" xml:space="preserve">
@@ -918,11 +923,6 @@ However, when using the application, third-party services may be called upon, wh
         <source>Privacy</source>
         <target>隐私</target>
         <note>Class = "UILabel"; text = "Privacy"; ObjectID = "about-privacy";</note>
-      </trans-unit>
-      <trans-unit id="about-source-notice.text" xml:space="preserve">
-        <source>Source code will be open in the future</source>
-        <target>源代码将在未来开放</target>
-        <note>Class = "UILabel"; text = "Source code will be open in the future"; ObjectID = "about-source-notice";</note>
       </trans-unit>
       <trans-unit id="about-vc.title" xml:space="preserve">
         <source>About</source>
@@ -1078,14 +1078,17 @@ However, when using the application, third-party services may be called upon, wh
       </trans-unit>
       <trans-unit id="setting-conversation-order-create.title" xml:space="preserve">
         <source>Create Time</source>
+        <target>按创建时间</target>
         <note>Class = "UICommand"; title = "Create Time"; ObjectID = "setting-conversation-order-create";</note>
       </trans-unit>
       <trans-unit id="setting-conversation-order-message.title" xml:space="preserve">
         <source>Last Message</source>
+        <target>按最近消息</target>
         <note>Class = "UICommand"; title = "Last Message"; ObjectID = "setting-conversation-order-message";</note>
       </trans-unit>
       <trans-unit id="setting-conversation-order-title.text" xml:space="preserve">
         <source>Conversation List Order</source>
+        <target>会话列表排序</target>
         <note>Class = "UILabel"; text = "Conversation List Order"; ObjectID = "setting-conversation-order-title";</note>
       </trans-unit>
       <trans-unit id="setting-engine-add-button.configuration.title" xml:space="preserve">
@@ -1185,7 +1188,7 @@ Try it now by pressing the Tab (+shift) key and arrow keys.</source>
   </file>
   <file original="SchemePlayground/Base.lproj/Localizable.strings" source-language="en" target-language="zh-Hans" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="14.3.1" build-num="14E300c"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0.1" build-num="15A507"/>
     </header>
     <body>
       <trans-unit id="guide.interCommunicationLink" xml:space="preserve">
@@ -1200,7 +1203,7 @@ Try it now by pressing the Tab (+shift) key and arrow keys.</source>
   </file>
   <file original="SchemePlayground/Base.lproj/Scheme.storyboard" source-language="en" target-language="zh-Hans" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="14.3.1" build-num="14E300c"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0.1" build-num="15A507"/>
     </header>
     <body>
       <trans-unit id="0N8-aw-dmw.text" xml:space="preserve">
@@ -1272,7 +1275,7 @@ Try it now by pressing the Tab (+shift) key and arrow keys.</source>
   </file>
   <file original="SchemePlayground/en.lproj/InfoPlist.strings" datatype="plaintext" source-language="en" target-language="zh-Hans">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="14.3.1" build-num="14E300c"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0.1" build-num="15A507"/>
     </header>
     <body>
       <trans-unit id="CFBundleName" xml:space="preserve">
