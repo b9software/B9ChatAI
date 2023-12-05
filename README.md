@@ -6,11 +6,15 @@
 
 中文用户请移步至 [docs.qq.com/doc/DUVVvdVhyaEdZYUxT](https://docs.qq.com/doc/DUVVvdVhyaEdZYUxT)
 
-Download from the [release page](https://github.com/b9software/B9ChatAI/releases).
-
 > **This app will not available on the Mac App Store**
 >
 > I developed this application solely to meet my own needs, but if I need to launch it on the App Store, I must add a sales API usage function, which goes against my original intention of creating a clean client.
+
+Highly recommended to use TestFlight to get the latest version and enable automatic updates.
+
+🚀 <https://testflight.apple.com/join/ATSq4vfs> 🚀
+
+You can download older versions from the [release page](https://github.com/b9software/B9ChatAI/releases).
 
 ## Features
 
@@ -61,10 +65,8 @@ The source code is available on [another repository](https://github.com/b9softwa
   3. I would like to add support for more engines, such as Claude and Azure OpenAI. If you can provide a testing API Key, that would be very helpful. Contact me via Twitter direct message [@BB9z](https://twitter.com/BB9z) or [Slack](https://join.slack.com/t/bb9z/shared_invite/zt-1thxa7xsm-yHt4ifZd~qxj0Ko~grnP0Q).
   4. Code contributions are welcome. Please open an issue to discuss before making extensive changes.
 
-## Beta Testing Channel
+## Nightly Testing Channel
 
-This channel is for testing new features. Please note that the beta version may not be stable.
+This channel is for testing new features. Please note that this version may not be stable.
 
-<https://testflight.apple.com/join/ATSq4vfs>
-
-[Talk on Slack](https://join.slack.com/t/bb9z/shared_invite/zt-1thxa7xsm-yHt4ifZd~qxj0Ko~grnP0Q)
+<https://testflight.apple.com/join/FDzn9A6p>
